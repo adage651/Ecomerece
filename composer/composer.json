@@ -1,0 +1,20 @@
+{
+    "name": "adage/composer",
+    "autoload": {
+        "psr-4": {
+            "Adage\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "\"amanual\""
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    },
+    "config": {
+        "process-timeout": 600
+    }
+
+}
