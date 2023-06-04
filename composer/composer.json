@@ -11,10 +11,10 @@
         }
     ],
     "require": {
-        "google/apiclient": "2.*"
+        "google/apiclient": "2.0"
     },
     "config": {
-        "process-timeout": 1200
+        "process-timeout": 600
     }
 
 }

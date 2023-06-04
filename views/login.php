@@ -1,7 +1,5 @@
 <?php
-//include('../controller/AuthGoogleController.php');
-include('../controller/gconfig.php');
-
+include('../controller/AuthGoogleController.php');
 ?>
 
 <!DOCTYPE html>
@@ -73,7 +71,7 @@ include('../controller/gconfig.php');
     </form>
   </div>
   <div id="popup" class="popup">
-    <form action="../controller/userController.php?func=addUser" id="sign_up" class="popup_content login_div" method="post" enctype="multipart/form-data">
+    <form action="../controller/userController.php" id="sign_up" class="popup_content login_div" method="post" enctype="multipart/form-data">
       <a href="#login">
         <svg class="close social_media">
           <use xlink:href="icons/sprite.svg#icon-circle-with-cross"></use>
@@ -126,10 +124,10 @@ include('../controller/gconfig.php');
             </div>
           </div>
           <div class="form_input1">
-            <label for="picture">
+            <label for="image">
               <h3 style="text-align: left">Profile Picture</h3>
             </label>
-            <input  name="profilePicture" data-content="Choose file" type="file" class="input" name="picture" id="picture" placeholder="Upload Picture" />
+            <input name="profilePicture" type="file" class="input" name="picture" id="picture" />
           </div>
         </div>
       </fieldset>
@@ -143,7 +141,7 @@ include('../controller/gconfig.php');
     <img src="image.jpg" alt="User photo" class="user-nav__user-photo">
     <span class="user-nav__user-name">Amanu</span>
    </div> -->
-  <!-- <img src="image.jpg" alt="Friend 1" class="recommend_photo recommended"> -->
+  <img src="image.jpg" alt="Friend 1" class="recommend_photo recommended">
 </body>
 
 </html>

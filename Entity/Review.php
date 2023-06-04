@@ -1,10 +1,10 @@
 <?php
-include('../controller/Database.php');
+
 class Review
 {
 
     private ?int $id = null;
-private ?Database $database=null;
+
 
     private ?string $review = null;
 
@@ -19,16 +19,7 @@ private ?Database $database=null;
 
     private ?Items $item = null;
 
-public function __construct($reviwer,$itemId,$review,$rank,$reviewDate)
-{
-    $this->database=Database::getInstance();
-    $this->review=$review;
-    $this->ranking=$this->ranking+$rank;
-   // $this->userReview=$this->database->getuser($reviwer);
-//$this->item=$itemId;
-//$this->reviewDate=$reviewDate;
-$this->database->setReview( $reviwer, $itemId, $review, $rank, $reviewDate,$reviewDate);
-}
+
     public function getId(): ?int
     {
         return $this->id;
