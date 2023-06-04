@@ -27,8 +27,12 @@ class Items
 
     private Array $review;
 
-    public function __construct()
+    public function __construct(string $itemName,string $itemDescription,float $itemPrice,string $itemPicture)
     {
+$this->ItemName=$itemName;
+$this->itemDescription=$itemDescription;
+$this->itemPrice=$itemPrice;
+$this->itemPicture=$itemPicture;
         $this->orderd = array();
         $this->catagory = array();
         $this->review = array();

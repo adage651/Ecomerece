@@ -1,13 +1,21 @@
 <?php
-
+include('../controller/Database.php');
 class Catagory
 {
     private ?int $id = null;
+    private $database=null;
 
-
-    private ?items $item = null;
+    private ?Items $item = null;
 
     private ?string $catagoryName = null;
+    public function __construct(string  $catagoryName,Items $item){
+        $this->database=Database::getInstance();
+        $this->catagoryName=$catagoryName;
+        $this->item=$item;
+       $itemId= $this->database->insertItem($item);
+        $this->database->addCatagoryName($this,$itemId);
+
+    }
 
     public function getId(): ?int
     {

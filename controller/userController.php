@@ -1,7 +1,11 @@
 <?php
 include('../Entity/User.php');
+
+$func=$_REQUEST['func'];
+$func();
+function addUser(){
 include('../Entity/Account.php');
-$target_dir = "uploads/";
+$target_dir = "uploads/People/";
 $target_file = $target_dir . basename($_FILES["profilePicture"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -27,6 +31,38 @@ $newUser->setAccount($newAccount);
 $newAccount->setUsername($newUser);
 header('Location: ../views/login.php');
 }
+}
+// function addReview(){
+//   include('../Entity/Review.php');
+//   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+
+//     $dataJson = file_get_contents('php://input');
+//     $data = json_decode($dataJson);
+    
+//  $review=new Review($data->reviwer,$data->itemId,$data->review,$data->rank,$data->reviewDate);
+
+// }
+// }
+function addReview($reviwer, $itemId, $review, $rank, $reviewDate) {
+  include('../Entity/Review.php');
+  $review = new Review($reviwer, $itemId, $review, $rank, $reviewDate);
+  //$review->addReviewToDatabase();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

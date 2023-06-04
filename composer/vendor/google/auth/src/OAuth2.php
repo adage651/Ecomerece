@@ -738,7 +738,7 @@ class OAuth2 implements FetchAuthTokenInterface
     /**
      * Gets the scope of the access requests as a space-delimited String.
      *
-     * @return string
+     * @return string|array|null
      */
     public function getScope()
     {

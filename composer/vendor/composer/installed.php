@@ -3,7 +3,7 @@
         'name' => 'adage/composer',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '572c26a1877922eef334be1e5721dcdc8bbb5635',
+        'reference' => 'e63e4ef54d988621c908c37c2a29b619336644cc',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'adage/composer' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '572c26a1877922eef334be1e5721dcdc8bbb5635',
+            'reference' => 'e63e4ef54d988621c908c37c2a29b619336644cc',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
