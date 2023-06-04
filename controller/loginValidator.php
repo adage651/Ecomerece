@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('Database.php');
+include('Database.php');
 if($_SERVER['REQUEST_METHOD']=='POST'){
     $username=$_POST['username'];
     $password=$_POST['password'];
@@ -10,9 +10,6 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     if($database->AuthenticateUser($username,$password)){
 
 header('location: ../views/index.php');
-
-
-
     }else{
         header('Location: ../views/login.php');
     }
